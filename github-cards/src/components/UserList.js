@@ -1,13 +1,16 @@
 import React from 'react';
 import UserCard from './UserCard';
-import UserCardFollower from './UserCardFollower';
+// import UserCardFollower from './UserCardFollower';
+import '../index.css';
 
 const UserList = (props) => {
     return (
-        <div className="array-container">
-            <h3>Followers:</h3>
+        <div>
+            <h3 className="title">Followers:</h3>
+            <div className="follower-container">
             {props.followers.map((follower) => <UserCard key={follower.id} userInfo={follower}/>)}
-            {console.log(props.followers)}
+                {console.log(props.followers)}
+            </div>
         </div>
     )
 }
