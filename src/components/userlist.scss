@@ -1,0 +1,15 @@
+.follower-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  width: 100%;
+}
+
+
+h3:first-child.title {
+  font-size: 30px;
+  margin-top: 20px;
+  color: black;
+}

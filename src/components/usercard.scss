@@ -1,0 +1,33 @@
+.ui.card {
+    width: 300px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10px;
+
+    >.extra {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    i.icon {
+        color: black;
+    }
+    >.content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    >.content>.description {
+        text-align: center;
+    }
+}
+
+.ui.card:first-child {
+    margin-top: 1em;
+}
