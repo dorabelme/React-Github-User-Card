@@ -7,7 +7,11 @@ import SearchForm from './SearchForm';
 function Navbar(props) {
     return (
         <div className="navbar">
-            <Icon name='github' size='large' alt="Github logo">Github Finder</Icon>
+            <div className="navbar-left">
+                <Icon name='github' size='large' alt="Github logo"></Icon>
+                <span className='icon-text'>Github User Finder</span>
+            </div>
+            
             <SearchForm updateSearchedUser={props.updateSearchedUser} />
         </div>
     )

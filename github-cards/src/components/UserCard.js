@@ -19,23 +19,23 @@ class UserCard extends Component {
                 <Card.Content>
                     <Card.Header>{userInfo.name}</Card.Header>
                     <Card.Meta>{userInfo.login}</Card.Meta>
-                    <Card.Meta>Location: {userInfo.location}</Card.Meta>
+                    <Card.Meta>{`Location: ${userInfo.location || 'N/A'}`}</Card.Meta>
                     <Card.Description>{`Bio: ${userInfo.bio || 'N/A'}`}</Card.Description>
                     <Image src={`http://ghchart.rshah.org/409ba5/${userInfo.login}`} alt="Github activity chart" wrapped />
                 </Card.Content>
                 <Card.Content extra>
                     <a>
-                        <Icon name='user' />
+                        <Icon name='user'/>
                         {userInfo.followers} Followers
-                        </a>
+                    </a>
                     <a>
                         <Icon name='user' />
                         {userInfo.following} Following
-                        </a>
+                    </a>
                 </Card.Content>
             </Card>
         )
     }
 }
 
-export default UserCard
+export default UserCard;

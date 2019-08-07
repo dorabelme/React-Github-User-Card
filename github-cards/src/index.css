@@ -19,7 +19,6 @@ code {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin: 20px;
 }
 
 .follower-container {
@@ -35,4 +34,5 @@ code {
 h3:first-child.title {
   font-size: 30px;
   margin-top: 20px;
+  color: black;
 }

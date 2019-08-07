@@ -1,6 +1,6 @@
 .ui.card {
     width: 300px;
-    height: 400px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,4 +14,16 @@
         justify-content: center;
         align-items: center;
     }
+    i.icon {
+        color: black;
+    }
+    >.content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.ui.card:first-child {
+    margin-top: 1em;
 }
