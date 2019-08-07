@@ -17,15 +17,15 @@ class UserCard extends Component {
             <Card>
                 <Image src={userInfo.avatar_url} alt={userInfo.name} size='small' wrapped circular />
                 <Card.Content>
-                    <Card.Header>{userInfo.name}</Card.Header>
-                    <Card.Meta>{userInfo.login}</Card.Meta>
+                    <Card.Header to={userInfo.html_url}><a href={userInfo.html_url}>{userInfo.name}</a></Card.Header>
+                    <Card.Meta><a href={userInfo.html_url}>{userInfo.login}</a></Card.Meta>
                     <Card.Meta>{`Location: ${userInfo.location || 'N/A'}`}</Card.Meta>
                     <Card.Description>{`Bio: ${userInfo.bio || 'N/A'}`}</Card.Description>
                     <Image src={`http://ghchart.rshah.org/409ba5/${userInfo.login}`} alt="Github activity chart" wrapped />
                 </Card.Content>
                 <Card.Content extra>
                     <a>
-                        <Icon name='user'/>
+                        <Icon name='user' />
                         {userInfo.followers} Followers
                     </a>
                     <a>
