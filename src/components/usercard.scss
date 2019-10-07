@@ -1,12 +1,18 @@
-.ui.card {
-    width: 300px;
-    min-height: 400px;
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .ui.card {
+    width: 200px;
+    min-height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
     margin-bottom: 10px;
+    }
 
     >.extra {
         display: flex;
