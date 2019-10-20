@@ -1,17 +1,17 @@
-.cards {
+.App {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
     .ui.card {
-    width: 200px;
-    min-height: 100px;
+    width: 28rem;
+    min-height: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin-bottom: 10px;
+    padding: 2rem;
+    margin-bottom: 1rem;
     }
 
     >.extra {
@@ -23,11 +23,12 @@
     i.icon {
         color: black;
     }
-    >.content {
+    .content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
     }
     >.content>.description {
         text-align: center;

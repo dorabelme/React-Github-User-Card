@@ -2,5 +2,9 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 300px;
+    width: 30rem;
+
+    .ui.button {
+        font-size: 1.3rem;
+    }
 }

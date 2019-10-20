@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-// import Todo from './Todo';
-import { Input } from 'semantic-ui-react'
-import 'semantic-ui-css/semantic.min.css';
-import { Button } from 'semantic-ui-react';
-
+import { Input, Button } from 'semantic-ui-react'
 import './searchform.scss';
 
 

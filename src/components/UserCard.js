@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Card, Icon, Image } from 'semantic-ui-react';
-import 'semantic-ui-css/semantic.min.css';
 import './usercard.scss';
 
 class UserCard extends Component {
@@ -14,7 +13,7 @@ class UserCard extends Component {
         const { userInfo } = this.props
 
         return (
-            <Card>
+            <Card> 
                 <Image src={userInfo.avatar_url} alt={userInfo.name} size='small' wrapped circular />
                 <Card.Content>
                     <Card.Header to={userInfo.html_url}><a href={userInfo.html_url}>{userInfo.name}</a></Card.Header>
